@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Cómo usar tu celular como pantalla de PCVR</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #111;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .intro {
+      background-color: #eee;
+      padding: 15px;
+      border-left: 5px solid #333;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .table-responsive {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-top: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      /* margin-top moved to .table-responsive */
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #ddd;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #000;
+      color: white;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      table, th, td {
+        font-size: 12px;
+        padding: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cómo usar tu celular como pantalla para PCVR (Realidad Virtual)</h1>
+  </header>
+
+  <main>
+
+    <div class="intro">
+      <p>¿Tienes un visor de cartón o tipo Daydream y una PC? Puedes usar tu teléfono como pantalla para jugar juegos de VR desde tu computadora. Aquí te mostramos cómo hacerlo.</p>
+    </div>
+
+    <h2>Paso 1: Instala una app de streaming de VR</h2>
+    <p>Estas apps envían la imagen desde tu PC a tu celular. Aquí tienes una comparación según mi experiencia:</p>
+
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>App</th>
+            <th>Calidad</th>
+            <th>Compatible con</th>
+            <th>Enlace</th>
+            <th>Pros</th>
+            <th>Contras</th>
+            <th>Exp. Personal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr> 
+            <td>ALVR</td>
+            <td>Baja</td>
+            <td>Windows + Android</td>
+            <td><a href="https://github.com/alvr-org/ALVR">Sitio web</a></td>
+            <td>
+              <ul>
+                <li>Permite configuración avanzada de la transmisión</li>
+                <li>Totalmente gratuito y de código abierto</li>
+                <li>Se puede usar con Wifi/5GHz y Usb</li>
+                <li>Baja latencia</li>
+                <li>Puedes usarlo sin límite de tiempo</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Requiere configuración avanzada</li>
+                <li>Solo disponible en android con PhoneVR (un fork de ALVR)</li>
+              </ul>
+            </td>
+            <td>No lo recomiendo. cuando hacía la transmisión, ya fuera por wifi o por usb, había mucho jittering, totalmente injugable.<br>Busqué en reddit, github, y youtube pero nadie le encontró una solución.<br>Probé cambiar la configuración gráfica, de red, del headset y nada funcionó.<br>Solo lo recomiendo si tienes un Oculus Quest 2 en adelante.</td>
+          </tr>
+          <tr>
+            <td>iVRy</td>
+            <td>Alta</td>
+            <td>SteamVR + iOS/Android</td>
+            <td><a href="https://store.steampowered.com/app/992490/iVRy_Driver_for_SteamVR/">Steam</a></td>
+            <td>
+              <ul>
+                <li>Fácil instalación (Se instala directamente desde steam para pc y desde playstore para android)</li>
+                <li>Se puede conectar a través de Wifi/5GHz/Usb</li>
+                <li>Tiene buenas opciones para configurar la transmisión</li>
+                <li>Puedes usarlo sin límite de tiempo</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>A los 5 minutos la imagen se vuelve blanco y negro. Si te gustaría jugar sin esto, tendrás que pagar (en el caso de Colombia) 23.700 pesos para la versión móvil</li>
+                <li>La conexión con Wifi es pésima, es más recomendable usar usb o 5ghz</li>
+              </ul>
+            </td>
+            <td>Es bastante bueno en cuanto a imagen. Si lo configuras bien, las cosas se ven bastante nítidas. Además, te permite elegir entre opciones para el head-tracking. Lamentablemente toca sí o sí comprar la versión premium para disfrutar de una buena experiencia, sobre todo si se planea hacer largas sesiones de VR.</td>
+          </tr>
+          <tr>
+            <td>Vridge (Riftcat)</td>
+            <td>Súper Alta</td>
+            <td>Windows + Android</td>
+            <td><a href="https://www.trinusvirtualreality.com/">Sitio web</a></td>
+            <td>
+              <ul>
+                <li>Te permite moverte por el espacio virtual usando el teclado, cosa que no permite ni ALVR ni iVRy</li>
+                <li>Te permite simular que tu mouse es un control dentro de steamvr, lo que te ahorra tener que instalarte otra app para poder tener controles dentro de steamvr</li>
+                <li>Es bastante fácil de instalar</li>
+                <li>Tiene una muy buena calidad de imagen</li>
+                <li>Permite conexión Wifi/5GHz/Usb</li>
+              </ul>
+            </td> 
+            <td>
+              <ul>
+                <li>Es de paga y solo permite 10 minutos de juego continuo en el modo gratuito, después de pasados los 10 minutos se cierra. En Colombia, el valor de la app es de 37.500 pesos</li>
+              </ul>
+            </td>
+            <td>En mi experiencia había mucho jitter en cualquier calidad (baja, media o alta). Esto, junto con que solo permite 10 minutos de juego continuo, arruina totalmente la experiencia. A pesar de todo esto fui feliz de jugar con el teclado y el ratón a varios juegos, con ninguna otra herramienta puedes hacer eso (o al menos no como lo haces con Vridge).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Paso 2: Instala Driver4VR (Si decidiste usar Vridge salta este paso)</h2> 
+    <p>Aquí podrás encontrar los tutoriales que necesites para el tipo de tracking que estés buscando: <a href="https://www.youtube.com/@Driver4VR">https://www.youtube.com/@Driver4VR</a></p>
+    <p>Y aquí podrás encontrar la herramienta en Mediafire de forma gratuita: <a href="https://www.mediafire.com/file/k19ehexo60544vq/driver4VR.zip/file">Descargar Driver4VR</a></p>
+
+    <h2>Paso 3: Vincula tu dispositivo con tu PC usando la app</h2>
+    <p>Sigue las instrucciones de la app para emparejar correctamente tu celular con tu computadora.</p>
+
+    <h2>Paso 4: Inicia SteamVR en tu computadora </h2>
+    <p>Abre SteamVR o el juego que quieras, y coloca tu teléfono en tu visor de cartón. Ya estás listo para jugar.</p>
+
+    <div class="img">
+      <img src="https://cdn.pixabay.com/photo/2021/12/04/19/01/virtual-reality-6845814_1280.jpg" alt="Realidad Virtual">
+    </div>
+
+    <p>¡Y listo! Estás usando tu teléfono como pantalla de realidad virtual para tu PC.</p>
+
+  </main>
+
+  <footer>
+    Página creada por YO! ALAN!🔥🔥
+  </footer>
+
+</body>
+</html>
